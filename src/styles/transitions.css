@@ -1,0 +1,31 @@
+.fade-to-black {
+  animation: fadeToBlack 0.8s ease-in-out forwards;
+}
+
+.melt-transition {
+  animation: melt 1.2s cubic-bezier(0.43, 0.13, 0.23, 0.96) forwards;
+}
+
+@keyframes fadeToBlack {
+  0% {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    background: rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes melt {
+  0% {
+    opacity: 1;
+    filter: blur(0) brightness(1);
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(50px) brightness(0);
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,50 @@
+@keyframes darkenBackground {
+  0%, 100% {
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.60);
+  }
+}
+
+.animate-darken {
+  animation: darkenBackground 8s ease-in-out infinite;
+}
+
+@keyframes cardPulse {
+  0% {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.2),
+                0 0 40px rgba(34, 197, 94, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(34, 197, 94, 0.3),
+                0 0 60px rgba(34, 197, 94, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.2),
+                0 0 40px rgba(34, 197, 94, 0.1);
+  }
+}
+
+@keyframes glowPulse {
+  0% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+
+.animate-card-pulse {
+  animation: cardPulse 3s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 3s ease-in-out infinite;
+}

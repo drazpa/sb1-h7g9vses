@@ -1,0 +1,83 @@
+/* Card Effects */
+.card-glow {
+  box-shadow: 
+    0 0 30px rgba(34, 197, 94, 0.3),
+    0 0 60px rgba(34, 197, 94, 0.2),
+    0 0 90px rgba(34, 197, 94, 0.1);
+  animation: cardPulse 3s ease-in-out infinite;
+}
+
+.card-hover-glow {
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover-glow:hover {
+  box-shadow: 
+    0 0 50px rgba(34, 197, 94, 0.4),
+    0 0 100px rgba(34, 197, 94, 0.3),
+    0 0 150px rgba(34, 197, 94, 0.2);
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* Column Effects */
+.column-glow {
+  box-shadow: 
+    0 0 40px rgba(34, 197, 94, 0.2),
+    0 0 80px rgba(34, 197, 94, 0.15),
+    0 0 120px rgba(34, 197, 94, 0.1);
+  animation: columnPulse 4s ease-in-out infinite;
+}
+
+.column-hover-glow {
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.column-hover-glow:hover {
+  box-shadow: 
+    0 0 60px rgba(34, 197, 94, 0.4),
+    0 0 120px rgba(34, 197, 94, 0.3),
+    0 0 180px rgba(34, 197, 94, 0.2);
+}
+
+/* Hover Animations */
+.hover-scale {
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Glow Effects */
+.text-glow {
+  text-shadow: 
+    0 0 10px rgba(34, 197, 94, 0.5),
+    0 0 20px rgba(34, 197, 94, 0.3),
+    0 0 30px rgba(34, 197, 94, 0.2);
+}
+
+.icon-glow {
+  filter: drop-shadow(0 0 10px rgba(34, 197, 94, 0.5))
+         drop-shadow(0 0 20px rgba(34, 197, 94, 0.3));
+}
+
+@keyframes columnPulse {
+  0% {
+    box-shadow: 
+      0 0 40px rgba(34, 197, 94, 0.2),
+      0 0 80px rgba(34, 197, 94, 0.15),
+      0 0 120px rgba(34, 197, 94, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 60px rgba(34, 197, 94, 0.3),
+      0 0 120px rgba(34, 197, 94, 0.2),
+      0 0 180px rgba(34, 197, 94, 0.15);
+  }
+  100% {
+    box-shadow: 
+      0 0 40px rgba(34, 197, 94, 0.2),
+      0 0 80px rgba(34, 197, 94, 0.15),
+      0 0 120px rgba(34, 197, 94, 0.1);
+  }
+}
